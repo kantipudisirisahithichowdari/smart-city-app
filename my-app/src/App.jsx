@@ -14,6 +14,7 @@ import Profile from "./components/Profile";
 import CitizenDashboard from "./components/CitizenDashboard";
 import AdminDashboard from "./components/AdminDashboard";
 import Navbar from "./components/Navbar";
+import ServiceDetails from "./components/ServiceDetails";
 
 function App() {
   const [userRole, setUserRole] = useState(() =>
@@ -48,6 +49,15 @@ function App() {
           path="/"
           element={userRole ? <Navigate to="/dashboard" /> : <Navigate to="/login" />}
         />
+        <Route
+          path="/cityservices"
+          element={userRole ? <CityServices /> : <Navigate to="/login" />}
+        />
+
+<Route
+  path="/citizen"
+  element={userRole ? <ServiceDetails /> : <Navigate to="/login" />}
+/>
 
         {/* Auth routes */}
         <Route
