@@ -12,7 +12,7 @@ const CityServices = () => {
         "Check water availability, report leaks, and access municipal water services.",
       details:
         "Water supply service allows citizens to check water availability, request new connections, and report any leakages.",
-      img: "https://source.unsplash.com/400x200/?water", // random image
+      img: "./water.webp", // random image
     },
     {
       title: "Electricity",
@@ -20,7 +20,7 @@ const CityServices = () => {
         "Report power outages, pay bills, and access electricity services online.",
       details:
         "Electricity services let users report outages, pay bills online, and track energy consumption.",
-      img: "https://source.unsplash.com/400x200/?electricity",
+      img: "./elec.jpg",
     },
     {
       title: "Waste Management",
@@ -28,7 +28,7 @@ const CityServices = () => {
         "Track waste collection schedules and report issues in your area.",
       details:
         "Waste management helps citizens schedule pickups, report missed collections, and learn recycling tips.",
-      img: "https://source.unsplash.com/400x200/?waste",
+      img: "./waste-management.jpg",
     },
     {
       title: "Transportation",
@@ -36,7 +36,7 @@ const CityServices = () => {
         "Get real-time public transport updates and plan your journey efficiently.",
       details:
         "Transportation services provide bus/train schedules, ticket booking, and real-time transit alerts.",
-      img: "https://source.unsplash.com/400x200/?transportation",
+      img: "./trans.jpg",
     },
   ];
 
@@ -54,7 +54,11 @@ const CityServices = () => {
               onClick={() => navigate("/citizen", { state: service })}
               style={{ cursor: "pointer" }}
             >
-              <img src={service.img} alt={service.title} className="cd-card-img" />
+              <img
+                src={service.img}
+                alt={service.title}
+                className="cd-card-img"
+              />
               <h3 className="cd-card-title">{service.title}</h3>
               <p className="cd-muted">{service.description}</p>
             </div>

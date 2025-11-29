@@ -64,61 +64,61 @@ const CitizenDashboard = () => {
         name: "City Hospital",
         address: "Main Road, Sector 12",
         phone: "011-2345678",
-        img: "https://source.unsplash.com/400x200/?hospital",
+        img: "./doc.jpg",
       },
       {
         name: "Sunrise Clinic",
         address: "Park Avenue, Block B",
         phone: "011-2233445",
-        img: "https://source.unsplash.com/400x200/?clinic",
+        img: "./doc2.jpg",
       },
     ],
     touristPlaces: [
       {
         name: "Central Park",
         desc: "Green oasis with jogging tracks and lake.",
-        img: "https://source.unsplash.com/400x200/?park,lake",
+        img: "./park.jpg",
       },
       {
         name: "City Museum",
         desc: "Artifacts and history exhibits.",
-        img: "https://source.unsplash.com/400x200/?museum",
+        img: "./meuseum.webp",
       },
     ],
     salons: [
       {
         name: "Great Salon",
         area: "Downtown",
-        img: "https://source.unsplash.com/400x200/?salon",
+        img: "./salon.jpg",
       },
       {
         name: "Style Studio",
         area: "East Market",
-        img: "https://source.unsplash.com/400x200/?haircut",
+        img: "./style.avif",
       },
     ],
     offices: [
       {
         name: "Municipal Corporation",
         dept: "Civic Services",
-        img: "https://source.unsplash.com/400x200/?office",
+        img: "./muni.jpg",
       },
       {
         name: "RTO Office",
         dept: "Transport",
-        img: "https://source.unsplash.com/400x200/?government",
+        img: "./rto.webp",
       },
     ],
     schemes: [
       {
         title: "Clean City Initiative",
         brief: "Subsidies for waste segregation units.",
-        img: "https://source.unsplash.com/400x200/?cleaning",
+        img: "./clean.jpg",
       },
       {
         title: "Green Homes",
         brief: "Rebates on solar rooftop installations.",
-        img: "https://source.unsplash.com/400x200/?solar",
+        img: "./grren.png",
       },
     ],
   };
